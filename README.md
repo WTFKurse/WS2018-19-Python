@@ -111,11 +111,12 @@ Um deinen Python Quelltext auszuführen, gibt es zwei verschiedene Wege. Einen e
 :one: Der bequemste Weg ist die Ausführung mittels einer IDE. Wir empfehlen für den Einstieg JetBrains PyCharm. Diese wird im Kurs weiter thematisiert.
 
 #### mittels der Konsole (etwas komplizierter)
-:one: Zuerst musst du sicher gehen, dass du Python 3 installiert hast und je nach Betriebssystem auch die Umgebungsvariablen korrekt gesetzt sind.
 
-:two: Gehe mittels der Konsole zu dem entsprechendem Pfad in dem du deinen Python Code als **.py**-Datei gespeichert hast.
+:one: Zuerst musst du sicher gehen, dass du Python 3 installiert hast. Je nach Betriebssystem müssen die Umgebungsvariablen korrekt gesetzt werden.
 
-:three: Gib `python` in die Konsole ein gefolgt von `[Code-Datei].py`.
+:two: Gehe mittels der Konsole zu dem entsprechendem Pfad, in der du deinen Python Code als **.py** Datei gespeichert hast.
+
+:three: Gib nun `python [Code-Datei].py` (je nach deinem Dateinamen) ein.
 
 :four: Das Programm wird nun auf deiner Konsole ausgeführt. In manchen Fälen kann es passieren, dass die Konsole sich sofort nach erreichen des Endes schließt.
 
@@ -177,16 +178,15 @@ Doch wenn man aus einem anderen Skript nun die Funktion `main` importieren möch
 ###  Input und Output
 Kaum ein Programm kommt ohen Input und Output aus, deswegen hat Python dies gleich in der Standart Bibliothek enthalten.
 
-Eingeb:
+Eingabe:
 ```python
 eingabe = input("Ihre Eingabe?")
 ```
 Zu beachten sind in dieser Zeile vier Komponente:
-
-1. `eingabe` (Variable)
-2. `=` (weist dem Ausdruck links von ihr, den Wert des Ausdrucks rechts von ihr zu)
-3.  `input()` (Funktion, welche von der Konsole eine Nutzereingabe entgegennimmt)
-4.  `"Ihre Eingabe?"` (String, der als Parameter für die Benutzeranweisung an die  `input()`-Funktion übergeben wurde)
+- `eingabe` (Variable)
+-  `=` (weist dem Ausdruck links von ihr, den Wert des rechten Ausdrucks zu)
+- `input()` (Funktion, welche von der Konsole eine Nutzereingabe entgegennimmt)
+-  `"Ihre Eingabe?"` (String, welcher als Parameter an die `input()`-Funktion zur Audgabe der Anweisung übergeben wurde)
 
 Ausgabe:
 ```python
