@@ -216,3 +216,33 @@ oder
 ```python
 'Dies ist ein {wort} Satz mit {number} Worten.'.format(wort = 'Satz', number = 8)
 ```
+
+### JetBrains  als IDE
+
+JetBrains ist ein tschechisches Software-Unternehmen und wurde im Jahr 2000 von den drei Russen gegründet. Das Unternehmen ist seitdem für seine seit 2001 entwickelte Java-Entwicklungsumgebung (IDE) IntelliJ IDEA bekannt.
+
+#### Download
+
+:arrow_down: Für die Programmiersprache Python entwickelte JetBrains die IDE PyCharm. Die Software ist Cross-Plattform kompatibel und somit für die Betriebssysteme macOS, Linux und Windows erhältlich.
+
+https://python3.wtf/pycharm
+
+
+#### Installation
+
+:arrow_forward: Für die Programmierung von Python werden einige Tools vorausgesetzt:
+
+* für Python 2: Versionen 2.6 und 2.7
+* Python 3: ab Version 3.4 bis Version 3.7
+
+Die jeweiligen Tools sind abhängig von der Plattform (Windows, Linux, macOS). Alle Hinweise zur Installation findest du in den Installationshinweisen.
+
+https://python3.wtf/pycharminstall
+
+#### Lizensierung
+
+:heart: Studierende können über das JetBrains Education Programm sämtliche Software des Herstellers nutzen. JetBrains bietet auch außerhalb von C++ interessante Software für den Studienalltag an.
+
+Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür ist die Verwendung der E-Mail-Adresse der TU Dresden (_@mailbox.tu-dresden.de_) notwendig.
+
+https://cplusplus.wtf/jetbrains
