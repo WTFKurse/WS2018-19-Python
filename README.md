@@ -154,8 +154,9 @@ Jedes Python Programm wird von oben nach unten eingelesen. Alle Befehle, die in 
 def main():
     foobar
     
-if __name__ == '__main__":
-    # Programm startet hier
+if __name__ == "__main__":
+    # Programm startet hier, aber nur, 
+    # wenn es direkt als Skript ausgeführt wird.
     main()
 ``` 
 Hier wird als erstes die Funktion `main()` aufgerufen. Man könnte natürlich auch folgendes schreiben:
@@ -203,7 +204,7 @@ Prinzipiell benötigen Variablen in Python keine Typdekleration. Dies liegt dara
 | Frozenset | fs = frozenset({1:'spma', 2 : 'ham'}) | unveränderbare Menge ||
 
 #### Strings
-Strings sind in jeder SPrach sehr wichtig, da über sie mit dem Nutzer kommuniziert wird. Sie zu beherschen ist deswegen unabdingbar.
+Strings sind in jeder Sprache sehr wichtig, da über sie mit dem Nutzer kommuniziert wird. Sie zu beherschen ist deswegen unabdingbar.
 
 - Strings sind in Python nicht veränderbar
 - String wird erzeugt mit '' oder ""
