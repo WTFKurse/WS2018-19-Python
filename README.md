@@ -254,7 +254,7 @@ https://python3.wtf/pycharminstall
 
 #### Lizensierung
 
-:heart: Studierende können über das JetBrains Education Programm sämtliche Software des Herstellers nutzen. JetBrains bietet auch außerhalb von C++ interessante Software für den Studienalltag an.
+:heart: Studierende können über das JetBrains Education Programm sämtliche Software des Herstellers nutzen. JetBrains bietet auch außerhalb von Python interessante Software für den Studienalltag an.
 
 Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür ist die Verwendung der E-Mail-Adresse der TU Dresden (_@mailbox.tu-dresden.de_) notwendig.
 
