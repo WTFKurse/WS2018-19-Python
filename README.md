@@ -111,13 +111,15 @@ Um deinen Python Quelltext auszuführen, gibt es zwei verschiedene Wege. Einen e
 :one: Der bequemste Weg ist die Ausführung mittels einer IDE. Wir empfehlen für den Einstieg JetBrains PyCharm. Diese wird im Kurs weiter thematisiert.
 
 #### mittels der Konsole (etwas komplizierter)
-:one: Zuerst musst du sicher gehen das du Python installiert hast und je nach Betriebssystem auch die Umgebungsvariablen korrekt gestezt sind.
+:one: Zuerst musst du sicher gehen, dass du Python 3 installiert hast und je nach Betriebssystem auch die Umgebungsvariablen korrekt gesetzt sind.
 
-:two: Gehe mittels der Konsole zu dem entsprechendem Pfad in dem du deinen Python Code als **.py** Datei gespeichert hast.
+:two: Gehe mittels der Konsole zu dem entsprechendem Pfad in dem du deinen Python Code als **.py**-Datei gespeichert hast.
 
 :three: Gib `python` in die Konsole ein gefolgt von `[Code-Datei].py`.
 
-:four: Das Programm wird nun auf deiner Konsole ausgeführt. In manchen Fälen kann es passieren das die Konsole sich sofrt nach erreichen des Endes schließt. Dazu musst du einfach in deinen Code als letzte Zeile einen `input()` schrieben, dann bleibt die Konsole solange geöffnet bis eine Nutzereingabe folgt.
+:four: Das Programm wird nun auf deiner Konsole ausgeführt. In manchen Fälen kann es passieren, dass die Konsole sich sofort nach erreichen des Endes schließt.
+
+<? Um das Problem zu umgehen, füge in deinem Code als letzte Zeile ein `input()` ein. Die Konsole bleibt nun bis zur nächsten Benutzerinteraktion geöffnet.
 
 ### Python Eigenschaften
 
@@ -133,32 +135,32 @@ Um deinen Python Quelltext auszuführen, gibt es zwei verschiedene Wege. Einen e
 
 mathematisch:		
 
-	+, -, * , / 
+	+, -, * , /
 vergleichend:		
-	
-	<, >, <=, >=, == *(wertgleich)*, is *(Objektgleich)*	
-logisch:	
-	
+
+	<, >, <=, >=, == *(wertgleich)*, is *(Objektgleich)*
+logisch:
+
 	or, and, not |
-bitweise: 
-	
-	&, |, <<, >>, ^ *(xor)*, ~ *(invertierend)* 
+bitweise:
+
+	&, |, <<, >>, ^ *(xor)*, ~ *(invertierend)*
 Accessoren
-	
-	. *(für mathematische methoden)* , [] *(für Datenstrukturen mit Index)* 
-	
+
+	. *(für mathematische methoden)* , [] *(für Datenstrukturen mit Index)*
+
 ### Start eines Programmes
 Jedes Python Programm wird von oben nach unten eingelesen. Alle Befehle, die in einem `.py` Skript liegen, werden beim Start des Skriptes über `python` oder beim Einbinden des Skriptes in andere Programme ausgeführt. Man kann diesen Prozess umgehen, in dem man den Startpunkt besonders definiert. Erkennt Python diese, so startet der Programmablauf ab dieser Stelle.
 
 ```python
 def main():
     foobar
-    
+
 if __name__ == "__main__":
-    # Programm startet hier, aber nur, 
+    # Programm startet hier, aber nur,
     # wenn es direkt als Skript ausgeführt wird.
     main()
-``` 
+```
 Hier wird als erstes die Funktion `main()` aufgerufen. Man könnte natürlich auch folgendes schreiben:
 
 ```python
@@ -173,22 +175,29 @@ Doch wenn man aus einem anderen Skript nun die Funktion `main` importieren möch
 
 
 ###  Input und Output
-Kaum ein Programm kommt ohen Input und Output aus, deswegen hat Python dies gleich in der Standart Bibliothek enthalten. 
+Kaum ein Programm kommt ohen Input und Output aus, deswegen hat Python dies gleich in der Standart Bibliothek enthalten.
 
 Eingeb:
 ```python
 eingabe = input("Ihre Eingabe?")
 ```
-Zu beachten sind in dieser Zeile vier Komponenten. Die erste ist `eingabe`, sie ist eine Variable, die zweite ist `=`, sie weist dem Ausdruck links von ihr, den Wert des Ausdrucks rechts von ihr zu. Die dritte Komponente ist `input()`, sie ist eine Funktion, welche von der Konsole eine Nutzereingabe entgegen nimmt. Die letzte Komponente ist `"Ihre Eingabe?"`, welches ein String ist, der als Parameter an `input()`übergebn wurde. Er wird auf der Konsole ausgegeben, sobald die Funktion aufgerufen wird.
+Zu beachten sind in dieser Zeile vier Komponente:
+
+1. `eingabe` (Variable)
+2. `=` (weist dem Ausdruck links von ihr, den Wert des Ausdrucks rechts von ihr zu)
+3.  `input()` (Funktion, welche von der Konsole eine Nutzereingabe entgegennimmt)
+4.  `"Ihre Eingabe?"` (String, der als Parameter für die Benutzeranweisung an die  `input()`-Funktion übergeben wurde)
 
 Ausgabe:
 ```python
 print("Dieses Skript ist hilfreich")
 ```
-Es wird die Funktion `print()`aufgerufen welche als Parameter einen String entgegen nehmen kann, in diesem Fall `Dieses Skript ist hilfreich`, welcher dann auf der Konsole ausgegeben wird.
+Es wird die Funktion `print()` aufgerufen, welche als Parameter einen String entgegen nehmen kann. In diesem Fall `Dieses Skript ist hilfreich`, welcher dann auf der Konsole ausgegeben wird.
 
 ### Variablentypen
-Prinzipiell benötigen Variablen in Python keine Typdekleration. Dies liegt daran das während der Laufzeit vorrangig die Typüberprüfung statt findet, man nennt dieses Konzept auch **dynamisch typisierung**. Trotzdem sind die Typen sehr wichtig, da Python eine **stark Typisierte** Sprache ist, sprich man muss Variablentypen explizit in andere Typen umwandeln.
+Prinzipiell benötigen Variablen in Python keine Typdekleration. Dies liegt daran, dass während der Laufzeit vorrangig die Typüberprüfung stattfindet. Das Konzept wird auch **dynamische Typisierung** genannt.
+
+Trotzdem sind die Typen sehr wichtig, da Python eine **stark typisierte** Sprache ist. Sprich man muss Variablentypen explizit in andere Typen umwandeln.
 
 | Datentyp                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Beispiel      |Beschreibung | Umwandlung |
 |------------------------------------|-------------------|-------------------|-----------|
@@ -204,25 +213,26 @@ Prinzipiell benötigen Variablen in Python keine Typdekleration. Dies liegt dara
 | Frozenset | fs = frozenset({1:'spma', 2 : 'ham'}) | unveränderbare Menge ||
 
 #### Strings
-Strings sind in jeder Sprache sehr wichtig, da über sie mit dem Nutzer kommuniziert wird. Sie zu beherschen ist deswegen unabdingbar.
+Strings (Zeichenketten) sind in jeder Sprache sehr wichtig, da über sie mit dem Nutzer kommuniziert wird. Sie zu beherschen ist deswegen unabdingbar.
 
 - Strings sind in Python nicht veränderbar
-- String wird erzeugt mit '' oder ""
+- String wird erzeugt mit `''` oder `""v
 - Strings sind ab Python3 UTF-8 encoded
 
 
+Strings können durch Konkatenation verknüpft werden.
 
-Strings können durch Konkatenation verknüpft werden
 ```python
 'Hallo' + ' ' + 'Python' # => 'Hallo Python'
 ```
-Listen, Tupel etc. von Strings könne mit der Funktion string.join verknüpft werden.
+Listen, Tupel etc. von Strings könne mit der Funktion `string.join` verknüpft werden.
+
 ```python
 ' '.join(['Hallo', 'Welt']) #=> 'Hallo Welt'
 ```
 
 
-Elemente in Strings werden mit der `format()`Funktion eingefügt. 
+Elemente in Strings werden mit der `format()`-Funktion eingefügt.
 ```python
 'Dies ist ein {} Satz mit {} Worten.'.format('Satz', 8)
 ```
@@ -257,6 +267,6 @@ https://python3.wtf/pycharminstall
 
 :heart: Studierende können über das JetBrains Education Programm sämtliche Software des Herstellers nutzen. JetBrains bietet auch außerhalb von Python interessante Software für den Studienalltag an.
 
-Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür ist die Verwendung der E-Mail-Adresse der TU Dresden (_@mailbox.tu-dresden.de_) notwendig.
+Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür ist die Verwendung der E-Mail-Adresse der TU Dresden _(@mailbox.tu-dresden.de)_ notwendig.
 
 https://python3.wtf/jetbrains
