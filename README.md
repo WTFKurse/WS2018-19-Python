@@ -147,16 +147,29 @@ Accessoren
 	
 	. *(für mathematische methoden)* , [] *(für Datenstrukturen mit Index)* 
 	
-### Boilerplatte
-Ein jedes Python Programm wird von oben nach unten eingelesen. Man kann diesen Prozess umgehen in dem man die Boilerplatte einprogrammiert. Erkennt Python diese, so startet der Programmablauf ab dieser Stelle.
+### Start eines Programmes
+Jedes Python Programm wird von oben nach unten eingelesen. Alle Befehle, die in einem `.py` Skript liegen, werden beim Start des Skriptes über `python` oder beim Einbinden des Skriptes in andere Programme ausgeführt. Man kann diesen Prozess umgehen, in dem man den Startpunkt besonders definiert. Erkennt Python diese, so startet der Programmablauf ab dieser Stelle.
+
 ```python
 def main():
     foobar
     
 if __name__ == '__main__":
+    # Programm startet hier
     main()
 ``` 
-Hier wird als erstes die Funktion `main()` aufgerufen.
+Hier wird als erstes die Funktion `main()` aufgerufen. Man könnte natürlich auch folgendes schreiben:
+
+```python
+def main():
+    foobar
+
+# Wird beim Start und beim Importieren ausgeführt
+main()
+```
+
+Doch wenn man aus einem anderen Skript nun die Funktion `main` importieren möchte, würde diese dabei auch ausgeführt werden. Mit der Abfrage `if __name__ == "__main__":` verhindern wir dies. Alles, was hinter dieser `if`-Abfrage steht, wird nun ausschließlich beim Start des Skripts aufgerufen, in dem es geschrieben steht.
+
 
 ###  Input und Output
 Kaum ein Programm kommt ohen Input und Output aus, deswegen hat Python dies gleich in der Standart Bibliothek enthalten. 
