@@ -120,7 +120,7 @@ Um deinen Python Quelltext auszuführen, gibt es zwei verschiedene Wege. Einen e
 
 :four: Das Programm wird nun auf deiner Konsole ausgeführt. In manchen Fälen kann es passieren, dass die Konsole sich sofort nach erreichen des Endes schließt.
 
-<? Um das Problem zu umgehen, füge in deinem Code als letzte Zeile ein `input()` ein. Die Konsole bleibt nun bis zur nächsten Benutzerinteraktion geöffnet.
+?> Um das Problem zu umgehen, füge in deinem Code als letzte Zeile ein `input()` ein. Die Konsole bleibt nun bis zur nächsten Benutzerinteraktion geöffnet.
 
 ### Python Eigenschaften
 
